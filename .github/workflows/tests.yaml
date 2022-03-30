@@ -2,14 +2,14 @@ name: Tests
 on:
   push:
     branches:
-      - main
+      - alpha
   pull_request:
     branches:
-      - main
+      - alpha
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       matrix:
         node: [ '10', '12', '14' ]
